@@ -27,7 +27,7 @@
     <meta property="og:type" content="website" />
 
     <title>Pilotary – Your EASA Wallet & Aviation Community</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/favpng.png" />
 
     <!-- Bootstrap icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -44,74 +44,17 @@
 
     <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/contributors.css" rel="stylesheet" />
 
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-
-    <style>
-        .contributor-slider {
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-        }
-
-        .slider-track {
-            display: flex;
-            width: max-content;
-            animation: scroll-left 25s linear infinite;
-        }
-
-        .contributor {
-            flex: 0 0 auto;
-            width: 200px;
-            margin: 0 1rem;
-            text-align: center;
-            animation: fadein 1s ease-in;
-        }
-
-        .contributor img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 0.5rem;
-        }
-
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        @keyframes fadein {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .contributor {
-                width: 150px;
-            }
-        }
-    </style>
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a class="navbar-brand fw-bold" href="#page-top">Start Bootstrap</a>
+            <a class="navbar-brand fw-bold" href="#page-top">
+                <img src="assets/img/non_vector_logo_full.png" alt="Pilotary logo" height="40" />
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -202,58 +145,30 @@
         </div>
     </aside>
     <!-- Contributors Section -->
+    <!-- Contributors Section -->
     <section class="py-5 bg-white" id="contributors">
-        <div class="container px-5">
-            <div class="text-center mb-4">
-                <h2 class="display-5 fw-bold">Our Contributors</h2>
-                <p class="text-muted">Meet some of the passionate minds helping Pilotary take off</p>
-            </div>
+        <div class="container text-center mb-4">
+            <h2 class="display-5 fw-bold">Our Contributors</h2>
+            <p class="text-muted">Meet some of the passionate minds helping Pilotary take off</p>
+        </div>
 
-            <div class="contributor-slider">
-                <div class="slider-track">
-                    <!-- Contributor Cards (repeatable) -->
-                    <div class="contributor">
-                        <img src="https://www.gravatar.com/avatar/1?s=100" alt="Laura" />
-                        <h6>Laura M.</h6>
-                        <p>Flight Instructor</p>
-                    </div>
-                    <div class="contributor">
-                        <img src="https://www.gravatar.com/avatar/2?s=100" alt="Daniel" />
-                        <h6>Daniel K.</h6>
-                        <p>Commercial Pilot</p>
-                    </div>
-                    <div class="contributor">
-                        <img src="https://www.gravatar.com/avatar/3?s=100" alt="Amina" />
-                        <h6>Amina R.</h6>
-                        <p>EASA Examiner</p>
-                    </div>
-                    <div class="contributor">
-                        <img src="https://www.gravatar.com/avatar/4?s=100" alt="Jonas" />
-                        <h6>Jonas P.</h6>
-                        <p>Flight School CTO</p>
-                    </div>
-                    <div class="contributor">
-                        <img src="https://www.gravatar.com/avatar/5?s=100" alt="Elena" />
-                        <h6>Elena W.</h6>
-                        <p>Private Pilot</p>
-                    </div>
-
-                    <!-- Clone for seamless loop -->
-                    <div class="contributor">
-                        <img src="https://www.gravatar.com/avatar/1?s=100" alt="Laura" />
-                        <h6>Laura M.</h6>
-                        <p>Flight Instructor</p>
-                    </div>
-                    <div class="contributor">
-                        <img src="https://www.gravatar.com/avatar/2?s=100" alt="Daniel" />
-                        <h6>Daniel K.</h6>
-                        <p>Commercial Pilot</p>
-                    </div>
-                    <div class="contributor">
-                        <img src="https://www.gravatar.com/avatar/3?s=100" alt="Amina" />
-                        <h6>Amina R.</h6>
-                        <p>EASA Examiner</p>
-                    </div>
+        <div class="container">
+            <div class="row justify-content-center gy-4">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center contributor">
+                    <img src="assets/img/contributor/alex.jpg" class="rounded-circle mb-2" alt="Alexander Duschek" />
+                    <h6 class="mb-0">Alexander Duschek</h6>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center contributor">
+                    <img src="assets/img/contributor/maik.jpg" class="rounded-circle mb-2" alt="Maik Link" />
+                    <h6 class="mb-0">Maik Link</h6>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center contributor">
+                    <img src="https://www.gravatar.com/avatar/3?s=100" class="rounded-circle mb-2" alt="Eugen Herdt" />
+                    <h6 class="mb-0">Eugen Herdt</h6>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center contributor">
+                    <img src="assets/img/contributor/david.jpeg" class="rounded-circle mb-2" alt="David Fernández Esteban" />
+                    <h6 class="mb-0">David Fernández Esteban</h6>
                 </div>
             </div>
         </div>
@@ -489,9 +404,9 @@
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <!-- Bootstrap core JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-wY1gZ4i4+gQ5QgJ+7N9i4+6V7kFG3wZlBb5RGHTkFRk3uZGe7LjgP5m8VfNEmqx7"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

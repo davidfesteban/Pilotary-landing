@@ -45,8 +45,66 @@
     <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <style>
+        .contributor-slider {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .slider-track {
+            display: flex;
+            width: max-content;
+            animation: scroll-left 25s linear infinite;
+        }
+
+        .contributor {
+            flex: 0 0 auto;
+            width: 200px;
+            margin: 0 1rem;
+            text-align: center;
+            animation: fadein 1s ease-in;
+        }
+
+        .contributor img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contributor {
+                width: 150px;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -145,53 +203,61 @@
     </aside>
     <!-- Contributors Section -->
     <section class="py-5 bg-white" id="contributors">
-  <div class="container px-5">
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold">Our Contributors</h2>
-      <p class="text-muted">Meet some of the passionate minds helping Pilotary take off</p>
-    </div>
+        <div class="container px-5">
+            <div class="text-center mb-4">
+                <h2 class="display-5 fw-bold">Our Contributors</h2>
+                <p class="text-muted">Meet some of the passionate minds helping Pilotary take off</p>
+            </div>
 
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper text-center">
+            <div class="contributor-slider">
+                <div class="slider-track">
+                    <!-- Contributor Cards (repeatable) -->
+                    <div class="contributor">
+                        <img src="https://www.gravatar.com/avatar/1?s=100" alt="Laura" />
+                        <h6>Laura M.</h6>
+                        <p>Flight Instructor</p>
+                    </div>
+                    <div class="contributor">
+                        <img src="https://www.gravatar.com/avatar/2?s=100" alt="Daniel" />
+                        <h6>Daniel K.</h6>
+                        <p>Commercial Pilot</p>
+                    </div>
+                    <div class="contributor">
+                        <img src="https://www.gravatar.com/avatar/3?s=100" alt="Amina" />
+                        <h6>Amina R.</h6>
+                        <p>EASA Examiner</p>
+                    </div>
+                    <div class="contributor">
+                        <img src="https://www.gravatar.com/avatar/4?s=100" alt="Jonas" />
+                        <h6>Jonas P.</h6>
+                        <p>Flight School CTO</p>
+                    </div>
+                    <div class="contributor">
+                        <img src="https://www.gravatar.com/avatar/5?s=100" alt="Elena" />
+                        <h6>Elena W.</h6>
+                        <p>Private Pilot</p>
+                    </div>
 
-        <!-- Slide -->
-        <div class="swiper-slide">
-          <img src="https://www.gravatar.com/avatar/1?s=100" class="rounded-circle mb-2" alt="Laura M.">
-          <h6 class="mb-0">Laura M.</h6>
-          <p class="text-muted small">Flight Instructor</p>
+                    <!-- Clone for seamless loop -->
+                    <div class="contributor">
+                        <img src="https://www.gravatar.com/avatar/1?s=100" alt="Laura" />
+                        <h6>Laura M.</h6>
+                        <p>Flight Instructor</p>
+                    </div>
+                    <div class="contributor">
+                        <img src="https://www.gravatar.com/avatar/2?s=100" alt="Daniel" />
+                        <h6>Daniel K.</h6>
+                        <p>Commercial Pilot</p>
+                    </div>
+                    <div class="contributor">
+                        <img src="https://www.gravatar.com/avatar/3?s=100" alt="Amina" />
+                        <h6>Amina R.</h6>
+                        <p>EASA Examiner</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <img src="https://www.gravatar.com/avatar/2?s=100" class="rounded-circle mb-2" alt="Daniel K.">
-          <h6 class="mb-0">Daniel K.</h6>
-          <p class="text-muted small">Commercial Pilot</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="https://www.gravatar.com/avatar/3?s=100" class="rounded-circle mb-2" alt="Amina R.">
-          <h6 class="mb-0">Amina R.</h6>
-          <p class="text-muted small">EASA Examiner</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="https://www.gravatar.com/avatar/4?s=100" class="rounded-circle mb-2" alt="Jonas P.">
-          <h6 class="mb-0">Jonas P.</h6>
-          <p class="text-muted small">Flight School CTO</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="https://www.gravatar.com/avatar/5?s=100" class="rounded-circle mb-2" alt="Elena W.">
-          <h6 class="mb-0">Elena W.</h6>
-          <p class="text-muted small">Private Pilot</p>
-        </div>
-
-      </div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- Navigation -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </div>
-</section>
+    </section>
     <!-- Integrations section -->
     <!-- Testimonials section -->
     <!-- Business model section -->
@@ -416,8 +482,7 @@
         </div>
     </div>
     <!-- Bootstrap core JS-->
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

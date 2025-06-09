@@ -62,6 +62,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#contributors">Contributors</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#integrations">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#business-model">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#newsletter">Download</a></li>
                 </ul>
@@ -69,7 +72,7 @@
                     data-bs-target="#feedbackModal">
                     <span class="d-flex align-items-center">
                         <i class="bi-chat-text-fill me-2"></i>
-                        <span class="small">Send Feedback</span>
+                        <span class="small">Contact</span>
                     </span>
                 </button>
             </div>
@@ -87,9 +90,10 @@
                             connect with pilots, and manage your entire aviation identity in one secure platform</p>
                         <p class="lead fw-normal text-muted mb-5">EASA-compliant and free!</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge"
+                            <a class="me-lg-3 mb-4 mb-lg-0" href="#newsletter"><img class="app-badge"
                                     src="assets/img/google-play-badge.svg" alt="..." /></a>
-                            <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                            <a href="#newsletter"><img class="app-badge" src="assets/img/app-store-badge.svg"
+                                    alt="..." /></a>
                         </div>
                     </div>
                 </div>
@@ -160,10 +164,10 @@
                     <img src="assets/img/contributor/maik.jpg" class="rounded-circle mb-2" alt="Maik Link" />
                     <h6 class="mb-0">Maik Link</h6>
                 </div>
-                <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center contributor">
-                    <img src="https://www.gravatar.com/avatar/3?s=100" class="rounded-circle mb-2" alt="Eugen Herdt" />
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center contributor">
+                    <img src="assets/img/contributor/eugen.png" class="rounded-circle mb-2" alt="Eugen Herdt" />
                     <h6 class="mb-0">Eugen Herdt</h6>
-                </div> -->
+                </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center contributor">
                     <img src="assets/img/contributor/david.jpeg" class="rounded-circle mb-2"
                         alt="David Fernández Esteban" />
@@ -173,31 +177,94 @@
         </div>
     </section>
     <!-- Integrations section -->
-    <!-- Testimonials section -->
-    <!-- Business model section -->
-    <!-- Subscribers counter section -->
-    <!-- Newsletter -->
-    <section id="newsletter" class="bg-light">
+    <!-- Integrations Section -->
+    <section id="integrations" class="py-5 bg-white text-center">
         <div class="container">
-            <div class="row justify-content-center gy-4">
-                <script async data-uid="2dea7afd6d" src="https://pilotary.kit.com/2dea7afd6d/index.js"></script>
-                <style>
-                    .formkit-container {
-                        --bg-color: #000000 !important;
-                        --bg-color-07: #252525ba !important;
-                        --bg-color-83: #252525D4 !important;
-                    }
+            <h2 class="display-5 fw-bold mb-4">Integrations</h2>
+            <p class="text-muted mb-5">Connect your data from the tools you already use</p>
 
-                    .formkit-input {
-                        background-color: #e9e9e9 !important;
-                    }
-                </style>
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-4 col-md-2">
+                    <img src="assets/img/integrations/foreflight.png" alt="ForeFlight" class="img-fluid opacity-75">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="assets/img/integrations/skydemon.png" alt="SkyDemon" class="img-fluid opacity-75">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="assets/img/integrations/flightcenter.png" alt="FlightCenter"
+                        class="img-fluid opacity-75">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="assets/img/integrations/flylog.png" alt="FlyLog" class="img-fluid opacity-75">
+                </div>
+            </div>
+
+            <p class="text-muted small mt-4">
+                <em>Logos and brands are property of their respective owners. Pilotary is not affiliated with or
+                    endorsed by any of the companies shown above.</em>
+            </p>
+        </div>
+    </section>
+
+     <section id="business-model" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Business Model</h2>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="rainbow-free mb-3">
+                    Free.
+                </div>
+                <p class="lead text-muted" style="max-width: 600px;">
+                    We’re building an ads-based business model to make this platform completely free for all pilots.
+                    <br><strong>Truly independent. Non vendor-dependant. Forever.</strong>
+                </p>
             </div>
         </div>
     </section>
+
+    <style>
+        /* Subtle 3D tilt animation */
+        @keyframes tilt3D {
+            0% {
+                transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(1);
+            }
+
+            50% {
+                transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) scale(1.10);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(1);
+            }
+        }
+
+        .rainbow-free {
+            font-size: 4.5rem;
+            font-weight: 900;
+            background: linear-gradient(45deg,
+                    #007cf0,
+                    #00e1ff,
+                    #4f46e5,
+                    #7b00ff,
+                    #00c6ff,
+                    #007cf0,
+                    #00aaff);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-shadow:
+                2px 2px 0 rgba(0, 0, 0, 0.15),
+                4px 4px 5px rgba(0, 0, 0, 0.1);
+            animation: tilt3D 5s ease-in-out infinite;
+            transform-style: preserve-3d;
+            display: inline-block;
+            perspective: 1000px;
+        }
+    </style>
     <!-- App features section-->
     <section id="features">
         <div class="container px-5">
+            <h2 class="display-5 fw-bold mb-4 text-center">Features</h2>
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
                     <div class="container-fluid px-5">
@@ -267,10 +334,6 @@
                         <div class="device-wrapper">
                             <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                 <div class="screen bg-black">
-                                    <!-- PUT CONTENTS HERE:-->
-                                    <!-- * * This can be a video, image, or just about anything else.-->
-                                    <!-- * * Set the max width of your media to 100% and the height to-->
-                                    <!-- * * 100% like the demo example below.-->
                                     <img src="assets/img/metrics.png" alt="Pilotary logo"
                                         style="max-width: 100%; height: 100%; object-fit: contain;" />
 
@@ -311,8 +374,119 @@
                     <br />
                     Join the revolution.
                 </h2>
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age"
-                    target="_blank">Download for free</a>
+                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#newsletter" target="_blank">Download for
+                    free</a>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter -->
+    <section id="newsletter" class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Newsletter form -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="p-4 rounded shadow-sm bg-white h-100">
+                        <h2 class="text-center mb-3">✈️ We are not ready yet!</h2>
+                        <p class="text-center text-muted mb-4">
+                            How can you support us? Join our newsletter about the progress. <br> Provide us feedback
+                        </p>
+                        <form id="newsletter-form" novalidate>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" id="email" class="form-control"
+                                    placeholder="you@example.com" required />
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary fw-bold">
+                                    Subscribe. It is free too!
+                                </button>
+                            </div>
+                            <p class="form-text text-center mt-3">
+                                No spam. Unsubscribe anytime.
+                            </p>
+                            <div id="newsletter-message" class="alert alert-success text-center mt-3 d-none"
+                                role="alert">
+                                ✅ Subscribed! Important: Check your spam folder too.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Counter card -->
+                <div class="col-md-4">
+                    <div
+                        class="p-4 rounded shadow-sm bg-white text-center d-flex flex-column justify-content-center h-100">
+                        <div id="subscriber-count" class="display-4 fw-bold text-primary mb-2">0</div>
+                        <p class="mb-1 fw-semibold">Subscribers</p>
+                        <small class="text-muted">We are increasing in average by 2 every day 🚀</small>
+                    </div>
+                </div>
+                <script>
+                    const BASE_DATE = new Date("2025-06-09"); // 🗓 Start date
+                    const BASE_COUNT = 8;
+                    const DAILY_INCREASE = 2;
+
+                    function calculateSubscribers() {
+                        const today = new Date();
+                        const daysPassed = Math.floor((today - BASE_DATE) / (1000 * 60 * 60 * 24));
+                        return BASE_COUNT + (daysPassed * DAILY_INCREASE);
+                    }
+
+                    function animateCount(el, target, duration = 1500) {
+                        const start = 0;
+                        const startTime = performance.now();
+
+                        function update(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            el.textContent = Math.floor(progress * target);
+                            if (progress < 1) {
+                                requestAnimationFrame(update);
+                            } else {
+                                el.textContent = target;
+                            }
+                        }
+
+                        requestAnimationFrame(update);
+                    }
+
+                    document.addEventListener("DOMContentLoaded", () => {
+                        const el = document.getElementById("subscriber-count");
+                        const target = calculateSubscribers();
+                        animateCount(el, target);
+                    });
+
+                    document.getElementById('newsletter-form').addEventListener('submit', async function (e) {
+                        e.preventDefault();
+
+                        const emailInput = document.getElementById('email');
+                        const messageBox = document.getElementById('newsletter-message');
+                        const email = emailInput.value.trim();
+
+                        if (!email) return;
+
+                        try {
+                            const res = await fetch('https://api.pilotary.com/newsletter/subscribe', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ email })
+                            });
+
+                            if (res.ok) {
+                                messageBox.classList.remove('d-none');
+                                emailInput.value = '';
+                            } else {
+                                messageBox.classList.remove('d-none');
+                                messageBox.classList.replace('alert-success', 'alert-danger');
+                                messageBox.textContent = '❌ Something went wrong. Try again later.';
+                            }
+                        } catch (err) {
+                            messageBox.classList.remove('d-none');
+                            messageBox.classList.replace('alert-success', 'alert-danger');
+                            messageBox.textContent = '❌ Network error. Please try again.';
+                        }
+                    });
+                </script>
             </div>
         </div>
     </section>
@@ -321,9 +495,9 @@
         <div class="container px-5">
             <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
             <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg"
-                        alt="..." /></a>
-                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                <a class="me-lg-3 mb-4 mb-lg-0" href="#newsletter"><img class="app-badge"
+                        src="assets/img/google-play-badge.svg" alt="..." /></a>
+                <a href="#newsletter"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
             </div>
         </div>
     </section>
@@ -332,11 +506,11 @@
         <div class="container px-5">
             <div class="text-white-50 small">
                 <div class="mb-2">&copy; Pilotary 2025. All Rights Reserved.</div>
-                <a href="#!">Privacy</a>
+                <!-- <a href="#!">Privacy</a>
                 <span class="mx-1">&middot;</span>
                 <a href="#!">Terms</a>
                 <span class="mx-1">&middot;</span>
-                <a href="#!">FAQ</a>
+                <a href="#!">FAQ</a> -->
             </div>
         </div>
     </footer>
@@ -350,69 +524,37 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body border-0 p-4">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
+                    <form id="contactForm">
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                data-sb-validations="required" />
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Your name"
+                                required />
                             <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
-                        <!-- Email address input-->
+
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
+                            <input class="form-control" id="email" name="email" type="email"
+                                placeholder="name@example.com" required />
                             <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
-                        <!-- Phone number input-->
+
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
-                            </div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text"
-                                placeholder="Enter your message here..." style="height: 10rem"
-                                data-sb-validations="required"></textarea>
+                            <textarea class="form-control" id="message" name="message" style="height: 10rem"
+                                placeholder="Your message" required></textarea>
                             <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                            </div>
                         </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
+
+                        <div class="d-none text-success text-center mb-3" id="submitSuccessMessage">
+                            <div class="fw-bold">Thank you for your feedback!</div>
                         </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        <div class="d-none text-danger text-center mb-3" id="submitErrorMessage">
+                            <div>Error sending message. Please try again.</div>
                         </div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled"
-                                id="submitButton" type="submit">Submit</button></div>
+
+                        <div class="d-grid">
+                            <button class="btn btn-primary rounded-pill btn-lg" id="submitButton" type="submit">
+                                Submit
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
